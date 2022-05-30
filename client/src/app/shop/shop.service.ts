@@ -5,12 +5,13 @@ import { IPagination } from '../shared/models/pagination';
 @Injectable({
   providedIn: 'root'
 })
+//api/products?typeId=&brandId=&sort=priceDesc&Search=blue
 export class ShopService {
   baseUrl = "https://localhost:5001/api/";
 
   constructor(private http: HttpClient) { }
 
   getProducts() {
-   return this.http.get<IPagination>(this.baseUrl + 'products');
+   return this.http.get<IPagination>(this.baseUrl + 'products?typeId=&brandId=&sort=priceDesc&Search=blue');
   }
 }
