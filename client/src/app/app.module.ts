@@ -9,12 +9,13 @@ import { from } from 'rxjs';
 import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ShopComponent } from './shop/shop.component';
+import { ProductItemComponent } from './shop/product-item/product-item.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    
+    AppComponent,    
   ],
   imports: [
     BrowserModule,
@@ -23,7 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     CoreModule,
     ShopModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
